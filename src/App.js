@@ -7,6 +7,7 @@ import React from 'react';
 import Event from './components/Event'
 import List from './components/List'
 import ReactForm from './components/ReactForm'
+import TodoList from './components/TodoList'
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <br/>
       <hr/>
       <ReactForm/>
+      <br/>
+      <hr/>
+      <TodoList/>
     </div>
   );
 }
