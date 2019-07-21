@@ -26,7 +26,7 @@ class TodoList extends React.Component {
         return (
             <div className="todolist_C">
                 <h2>TodoList 演示</h2>
-                <input type="text" ref="title" onKeyUp={this.addDate} />{" "}
+                <input type="text" ref="title" onKeyUp={this.addDate} />
                 <button onClick={this.addDate} className="handle_btn">
                     +添加
                 </button>
