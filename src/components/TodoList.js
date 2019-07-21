@@ -27,9 +27,6 @@ class TodoList extends React.Component {
             <div className="todolist_C">
                 <h2>TodoList 演示</h2>
                 <input type="text" ref="title" onKeyUp={this.addDate} />
-                <button onClick={this.addDate} className="handle_btn">
-                    +添加
-                </button>
                 <ul className="list_view">
                     {this.state.list.map((v, k) => {
                         return (

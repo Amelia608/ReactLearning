@@ -1,3 +1,10 @@
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 .className{
   color: red
 }
@@ -60,4 +67,23 @@ input[type='text']{
  }
  .todolist_C .list_view li{
   padding: 5px 10px;
+ }
+ .page_todolist2 .header{
+   color: #fff;
+   background: #000;
+   text-align: center;
+   padding: 15px 10px;
+   font-size: 18px;
+ }
+ .page_todolist2 .header input{
+   height: 40px;
+   width:300px;
+   font-size: 14px;
+   margin-left: 10px;
+ }
+ .page_todolist2  .content{
+   padding: 20px;
+ }
+ .page_todolist2  .content li{
+   padding: 6px 0;
  }
