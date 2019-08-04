@@ -1,4 +1,5 @@
 import React from 'react'
+import storage from '../model/storage'
 class Todolist2 extends React.Component{
   constructor(props){
     super(props);
@@ -26,7 +27,8 @@ class Todolist2 extends React.Component{
   handleCheckbox=(k)=>{
     let list=this.state.list
     list[k].checked=!list[k].checked
-    localStorage.setItem('list',JSON.stringify(list))
+    // localStorage.setItem('list',JSON.stringify(list))
+    storage.set('list',list)
     this.setState({list})
   }
   addData=(e)=>{
@@ -35,18 +37,21 @@ class Todolist2 extends React.Component{
       let list=this.state.list
       list.push({title:this.refs.title.value,checked:false})
       this.refs.title.value=''
-      localStorage.setItem('list',JSON.stringify(list))
+      // localStorage.setItem('list',JSON.stringify(list))
+      storage.set('lsit',list)
       this.setState({list})
     }
   }
   removeDate=(k)=>{
     let list=this.state.list
     list.splice(k,1)
-    localStorage.setItem('list',JSON.stringify(list))
+    // localStorage.setItem('list',JSON.stringify(list))
+    storage.set('list',list)
     this.setState({list})
   }
   componentDidMount(){
-    let list=JSON.parse(localStorage.getItem('list'))
+    // let list=JSON.parse(localStorage.getItem('list'))
+    let list=storage.get('list')
     if(list) this.setState({list})
     console.log(localStorage.getItem('list'))
   }

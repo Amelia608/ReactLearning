@@ -8,12 +8,15 @@ import React from 'react';
 // import List from './components/List'
 // import ReactForm from './components/ReactForm'
 // import TodoList from './components/TodoList'
+// 缓存数据
 import Todolist2 from './components/Todolist2'
+//模块化
+import Todolist3 from './components/Todolist3'
 
 function App() {
   return (
     <div className="App">
-      <Todolist2/>
+      <Todolist3/>
     </div>
   );
 }
