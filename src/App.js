@@ -12,6 +12,8 @@ import React from 'react';
 import Todolist2 from './components/Todolist2'
 //模块化
 import Todolist3 from './components/Todolist3'
+import Axios from './components/Axios'
+import FetchJsonp from './components/FetchJonp'
 /**
  * 1.父——>子组件传值
  *    方法：父组件调用子组件的时候加上属性  子组件使用父组件传过来的值通过 this.props.属性名获取值 
@@ -32,7 +34,9 @@ function App() {
   return (
     <div className="App">
       {/* <Todolist3/> */}
-      <Personal/>
+      {/* <Personal/> */}
+      <Axios/>
+      <FetchJsonp/>
     </div>
   );
 }
