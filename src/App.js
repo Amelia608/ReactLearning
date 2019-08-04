@@ -12,11 +12,20 @@ import React from 'react';
 import Todolist2 from './components/Todolist2'
 //模块化
 import Todolist3 from './components/Todolist3'
-
+/**
+ * 1.父——>子组件传值
+ *    方法：父组件调用子组件的时候加上属性  子组件使用父组件传过来的值通过 this.props.属性名获取值 
+ * 2.父-->子组件传方法  同属性
+ * 3.将整个父对象传给子组件 同属性  值等于this
+ * 4.子组件--->父组件传值  子组件调用父组件的方法通过.bind(this,value)传递给父组件
+ * 5.父组件主动获取或调用子组件的值或方法  父组件调用子组件  子组件加上ref属性  this.refs.ref属性名即可
+ * **/
+import Personal from './components/Personal'
 function App() {
   return (
     <div className="App">
-      <Todolist3/>
+      {/* <Todolist3/> */}
+      <Personal/>
     </div>
   );
 }
