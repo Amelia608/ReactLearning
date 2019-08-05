@@ -29,6 +29,24 @@ import FetchJsonp from './components/FetchJonp'
  * 注意大小写问题
  * 
  * **/
+
+
+
+/**生命周期函数
+ * 组件加载时触发的函数(4个步骤)
+ *    1.constructor
+ *    2.componentWillMount
+ *    3.render
+ *    4.componentDidMount
+ * 组件更新数据触发的生命周期函数（4个步骤）
+ *    1.shouldComponentUpdate
+ *    2.componentWillUpdate
+ *    3.render
+ *    4.componentDidUpdate
+ * 
+ * 
+ * 
+ * **/  
 import Personal from './components/Personal'
 function App() {
   return (
