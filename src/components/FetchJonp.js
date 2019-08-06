@@ -1,5 +1,24 @@
 import React, { Component } from 'react';
 import fetchJsonp from 'fetch-jsonp'
+
+function FancyBorder(props){
+  return  (
+    <div className={`FancyBorder FancyBorder-${props.color}`}>
+       {props.children}
+    </div>
+  )
+}
+
+function WelcomDialog(){
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">welcome</h1>
+      <p className="Dialog-message">
+        Thank you for visiting our spacecraft!
+      </p>
+    </FancyBorder>
+  )
+}
 class FetchJsonp extends Component {
   constructor(props) {
     super(props);
@@ -38,6 +57,7 @@ class FetchJsonp extends Component {
             })
           }
         </ul>
+        <WelcomDialog/>
       </div>
     );
   }
